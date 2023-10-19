@@ -1,0 +1,1316 @@
+{
+  "message": "success",
+  "statusCode": 200,
+  "responseData": {
+    "reportId": 3,
+    "reportHeading": "DealBook From SP",
+    "paggingExist": "Yes",
+    "recordPerPage": 10,
+    "pdfRequired": "Y",
+    "excelRequired": "Y",
+    "isPrintAllowed": 1,
+    "exportAllRecords": 1,
+    "lang1": "DealBook From SP",
+    "isFromSp": 1,
+    "tblReportDetails": [
+      {
+        "reportDetailId": 4,
+        "reportId": 3,
+        "selectQuery": "appauction.Test",
+        "columnDetails": "lotNo:1:L:65%:0 ~ markname:2:C:30%:0 ~ gradeName:3:L:65%:0 ~ invoiceNo:4:L:65%:0 ~ totalPackages:5:L:65%:0 ~ totalGrossWeight:6:L:65%:0 ~ buyersPromptDate:7:L:65%:0",
+        "whereCondition": "",
+        "orderBy": "",
+        "lang1": "lotNo:1:L:65%:0 ~ markname:2:C:30%:0 ~ gradeName:3:L:65%:0 ~ invoiceNo:4:L:65%:0 ~ totalPackages:5:L:65%:0 ~ totalGrossWeight:6:L:65%:0 ~ buyersPromptDate:7:L:65%:0"
+      }
+    ],
+    "tblReportSearchColumnDetails": [
+      {
+        "reportId": 3,
+        "columnId": 6,
+        "columnName": "Mark Name",
+        "datatype": "text",
+        "selectFieldName": "markname",
+        "searchRequired": "Yes",
+        "searchType": "N",
+        "searchCriteria": 0,
+        "sortOrder": 3,
+        "lang1": "Mark Name",
+        "tblReportControlMaster": [
+          {
+            "reportControlId": 5,
+            "reportId": 2,
+            "controlType": "tab",
+            "query": null,
+            "tblReportControlDetail": [],
+            "isAPI": 0,
+            "apiname": null
+          }
+        ]
+      },
+      {
+        "reportId": 3,
+        "columnId": 7,
+        "columnName": "Deal Status",
+        "datatype": "text",
+        "selectFieldName": "1",
+        "searchRequired": "Yes",
+        "searchType": "N",
+        "searchCriteria": 0,
+        "sortOrder": 2,
+        "lang1": "Deal Status",
+        "tblReportControlMaster": [
+          {
+            "reportControlId": 6,
+            "reportId": 3,
+            "controlType": "combo",
+            "query": null,
+            "tblReportControlDetail": [
+              {
+                "reportControlDetailId": 4,
+                "reportId": 3,
+                "controlValue": "Pending",
+                "condition": "dealStatus=0",
+                "isDefaultSelected": "Y",
+                "lang1": "Pending"
+              },
+              {
+                "reportControlDetailId": 5,
+                "reportId": 3,
+                "controlValue": "Approve",
+                "condition": "dealStatus=1",
+                "isDefaultSelected": "Y",
+                "lang1": "Approve"
+              }
+            ],
+            "isAPI": 0,
+            "apiname": null
+          }
+        ]
+      },
+      {
+        "reportId": 3,
+        "columnId": 8,
+        "columnName": "buyers Prompt Date",
+        "datatype": "Date",
+        "selectFieldName": "buyersPromptDate",
+        "searchRequired": "Yes",
+        "searchType": "N",
+        "searchCriteria": 0,
+        "sortOrder": 4,
+        "lang1": "buyers Prompt Date",
+        "tblReportControlMaster": [
+          {
+            "reportControlId": 7,
+            "reportId": 3,
+            "controlType": "date",
+            "query": null,
+            "tblReportControlDetail": [],
+            "isAPI": 0,
+            "apiname": null
+          }
+        ]
+      },
+      {
+        "reportId": 3,
+        "columnId": 10,
+        "columnName": "auction Center Name",
+        "datatype": "text",
+        "selectFieldName": "auctionCenterId",
+        "searchRequired": "Yes",
+        "searchType": "N",
+        "searchCriteria": 0,
+        "sortOrder": 5,
+        "lang1": "auctionCenterName",
+        "tblReportControlMaster": [
+          {
+            "reportControlId": 9,
+            "reportId": 3,
+            "controlType": "multiselect",
+            "query": "SELECT [auctionCenterId] as fieldValue1,auctionCenterName as fieldValue2 FROM TeaBoard.appmaster.tbl_AuctionCenter",
+            "tblReportControlDetail": [
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "1",
+                "condition": "dhvs",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "2",
+                "condition": "Ahmedabad",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "3",
+                "condition": "string123",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "5",
+                "condition": "hgdgfdgf",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "6",
+                "condition": "asd",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10002",
+                "condition": "hadaddhw",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10003",
+                "condition": "hadah",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10004",
+                "condition": "haffdah",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10005",
+                "condition": "hfsfaffdah",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10006",
+                "condition": "Dhule",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10007",
+                "condition": "Surat",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10008",
+                "condition": "Gujarat",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10009",
+                "condition": "AMD",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10010",
+                "condition": "Dhulef",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10011",
+                "condition": "Jalgaon",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10012",
+                "condition": "SAVNER",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10013",
+                "condition": "gfdhgfh",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10014",
+                "condition": "AuctionCenter",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10015",
+                "condition": "XYZ-K",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10016",
+                "condition": "sda",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10017",
+                "condition": "UVRfg",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10021",
+                "condition": "SBucWCmx",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10032",
+                "condition": "Guwahati Dust",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10033",
+                "condition": "Guwahati Lead",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10034",
+                "condition": "Tea Serve",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10041",
+                "condition": "Bhopal",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10042",
+                "condition": "Kolkata",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10047",
+                "condition": "Shimla",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10048",
+                "condition": "ghdghs",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10050",
+                "condition": "Nagpur",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10051",
+                "condition": "NagpurData",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10052",
+                "condition": "NagpurDataa",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10053",
+                "condition": "ShimlaData",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10054",
+                "condition": "ShimlaPata",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10055",
+                "condition": "ShimlaTata",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10056",
+                "condition": "ShimlaMata",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10057",
+                "condition": "Kolk",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10058",
+                "condition": "aa",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10059",
+                "condition": "TestingTh",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10060",
+                "condition": "Testinh",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10061",
+                "condition": "Testtttttt",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10062",
+                "condition": "uytyyt",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10063",
+                "condition": "ACS",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10064",
+                "condition": "Siliguri",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10065",
+                "condition": "ACN of UP",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10066",
+                "condition": "yuty",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10067",
+                "condition": "435rtryhrt",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10068",
+                "condition": "Auc",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10069",
+                "condition": "TESTSEPTWELVECENTER",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10070",
+                "condition": "TESTTWELVECENTER",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10071",
+                "condition": "dfdhfghf",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10072",
+                "condition": "TESTTWELVEONECENTER",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10073",
+                "condition": "TESTTWELVECENTERTWO",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10074",
+                "condition": "Shimsla",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10075",
+                "condition": "Shimlga",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10076",
+                "condition": "TFTFT",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10077",
+                "condition": "AUCTONE",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10078",
+                "condition": "Auction center",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10079",
+                "condition": "zdgf",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10080",
+                "condition": "zdfgf",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10081",
+                "condition": "zdegf",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10082",
+                "condition": "zdgfjjh",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10083",
+                "condition": "Guwahati",
+                "isDefaultSelected": null,
+                "lang1": null
+              },
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "10084",
+                "condition": "GuwahatidK",
+                "isDefaultSelected": null,
+                "lang1": null
+              }
+            ],
+            "isAPI": 0,
+            "apiname": null
+          }
+        ]
+      },
+      {
+        "reportId": 3,
+        "columnId": 12,
+        "columnName": "Season",
+        "datatype": "text",
+        "selectFieldName": "Season",
+        "searchRequired": "Yes",
+        "searchType": "N",
+        "searchCriteria": 0,
+        "sortOrder": 6,
+        "lang1": "Season",
+        "tblReportControlMaster": [
+          {
+            "reportControlId": 12,
+            "reportId": 3,
+            "controlType": "combo",
+            "query": "SELECT YEAR(GETDATE()) as fieldValue1,YEAR(GETDATE()) as fieldValue2",
+            "tblReportControlDetail": [
+              {
+                "reportControlDetailId": 0,
+                "reportId": 0,
+                "controlValue": "2023",
+                "condition": "2023",
+                "isDefaultSelected": null,
+                "lang1": null
+              }
+            ],
+            "isAPI": 0,
+            "apiname": null
+          }
+        ]
+      }
+    ],
+    "tblReportLinkDetail": [],
+    "getReportList": [
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 20,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade01",
+        "fieldValue2": "mark01",
+        "fieldValue1": "lot01"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 50,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade01",
+        "fieldValue2": "mark01",
+        "fieldValue1": "lot02"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade01",
+        "fieldValue2": "mark01",
+        "fieldValue1": "lot03"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot04"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot05"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 4000.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot06"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot07"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot07"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot07"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot10"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 10:44:32",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot11"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot12"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot12"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot12"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-09-08 11:46:47",
+        "fieldValue6": 10.45,
+        "fieldValue5": 0,
+        "fieldValue4": "Test invoice",
+        "fieldValue3": null,
+        "fieldValue2": "orange",
+        "fieldValue1": "Lot : 1"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-09-08 12:26:15",
+        "fieldValue6": 10.45,
+        "fieldValue5": 0,
+        "fieldValue4": "Test invoice",
+        "fieldValue3": null,
+        "fieldValue2": "orange",
+        "fieldValue1": "Lot : 1"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "INV01",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "mark02",
+        "fieldValue1": "lot13"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023710-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023710-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023710-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023710-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023710-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023710-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 05:30:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023710-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023711-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023712-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023713-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-S"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023718-a"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023719-B"
+      },
+      {
+        "fieldValue8": "2023",
+        "fieldValue7": "2023-08-25 00:00:00",
+        "fieldValue6": 100.0,
+        "fieldValue5": 40,
+        "fieldValue4": "TES20",
+        "fieldValue3": "Grade02",
+        "fieldValue2": "Orange",
+        "fieldValue1": "Sach123AHM2023720-C"
+      }
+    ]
+  }
+}
